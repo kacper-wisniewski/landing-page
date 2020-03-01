@@ -69,13 +69,16 @@ section{
     padding: 20px 30px;
     ul{
         li{
-            font-size: 18px;
-            margin: 0;
             display: inline-block;
-            padding: 10px 15px;
-            transition: $transition;
-            &:hover{
-                background: $color-main;
+            a{
+                font-size: 18px;
+                margin: 0;
+                display: inline-block;
+                padding: 10px 15px;
+                transition: $transition;
+                &:hover{
+                    background: $color-main;
+                }
             }
         }
     }
@@ -216,18 +219,25 @@ section{
         display: flex;
         justify-content: center;
         li{
-            width: 40px;
-            height: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            border-radius: 50%;
-            margin: 0 10px;
-            background: $color-dark;
-            transition: $transition;
-            &:hover{
-                background-color: $color-main;
+            display: inline-block;
+            a{
+                font-size: 0;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-items: center;
+                border-radius: 50%;
+                margin: 0 10px;
+                background: $color-dark;
+                transition: $transition;
+                &:hover{
+                    background-color: $color-main;
+                }
+                i{
+                    font-size: 24px;
+                }
             }
         }
     }
