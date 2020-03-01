@@ -68,6 +68,10 @@ section {
 }
 
 .navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
   font-size: 18px;
   margin: 0;
   display: inline-block;
@@ -75,7 +79,7 @@ section {
   transition: 0.3s;
 }
 
-.navigation ul li:hover {
+.navigation ul li a:hover {
   background: #FED136;
 }
 
@@ -245,6 +249,11 @@ section {
 }
 
 .footer ul li {
+  display: inline-block;
+}
+
+.footer ul li a {
+  font-size: 0;
   width: 40px;
   height: 40px;
   display: -ms-flexbox;
@@ -261,8 +270,12 @@ section {
   transition: 0.3s;
 }
 
-.footer ul li:hover {
+.footer ul li a:hover {
   background-color: #FED136;
+}
+
+.footer ul li a i {
+  font-size: 24px;
 }
 
 /* Media */
